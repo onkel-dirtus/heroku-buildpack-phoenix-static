@@ -43,6 +43,7 @@ load_config() {
   phoenix_dir=$build_dir/$phoenix_relative_path
 
   info "Detecting assets directory"
+  echo $phoenix_dir/$assets_path
   if [ -f "$phoenix_dir/$assets_path/package.json" ]; then
     # Check phoenix custom sub-directory for package.json
     info "* package.json found in custom directory"

@@ -39,3 +39,4 @@ install_npm
 if [ -f "$assets_dir/yarn.lock" ]; then
   install_yarn "$heroku_dir/yarn"
 fi
+pwd
