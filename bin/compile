@@ -40,3 +40,5 @@ if [ -f "$assets_dir/yarn.lock" ]; then
   install_yarn "$heroku_dir/yarn"
 fi
 pwd
+cd $build_dir/$phoenix_relative_path/$assets_path
+npm i
