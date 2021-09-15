@@ -42,9 +42,3 @@ fi
 
 head "Building dependencies"
 install_and_cache_deps
-
-compile
-
-head "Finalizing build"
-cache_versions
-finalize_node
