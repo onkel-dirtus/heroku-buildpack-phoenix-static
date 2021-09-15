@@ -43,6 +43,6 @@ pwd
 cd $build_dir/$phoenix_relative_path/$assets_path
 npm i
 # node node_modules/tailwindcss/lib/cli.js --input=css/app.scss --output=../priv/static/assets/app.css --postcss
-mix assets.deploy
+esbuild default --minify
 # The real Phoenix buildpack will re-install node & npm, remove them so it doesn't err out
 remove_node
