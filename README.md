@@ -1,3 +1,7 @@
+# Buildpack fork
+
+Because of our dep on `app.css` needing to be available while the elixir application is compiled, we use this buildpack to install `node` and `npm`, run the `postcss` commands we need, and then continue with the regular Elixir & non-forked Phoenix buildpack.
+
 # Phoenix Static Buildpack
 
 ## Purpose
